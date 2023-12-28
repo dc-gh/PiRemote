@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_gravity="center"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/remote_background"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/remote_black"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:text="@string/tibo_plus3_label_top"
+                android:gravity="center"
+                android:textSize="20dp"/>
+
+            <GridLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="90"
+                android:background="@drawable/remote_black"
+                android:columnCount="3"
+                android:rowCount="7"
+                android:layout_margin="16dp"
+                android:alignmentMode="alignMargins">
+
+                <ImageButton
+                    android:id="@+id/power_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:src="@drawable/power_settings_red"
+                    android:tag="@string/tibo_plus3_power"/>
+
+                <ImageButton
+                    android:id="@+id/mute_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:src="@drawable/volume_off"
+                    android:tag="@string/tibo_plus3_mute"/>
+
+                <Button
+                    android:id="@+id/rca_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button"
+                    android:text="RCA"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:textColor="?attr/colorControlNormal"
+                    android:tag="@string/tibo_plus3_rca"/>
+
+                <Button
+                    android:id="@+id/aux_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button"
+                    android:text="AUX"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:textColor="?attr/colorControlNormal"
+                    android:tag="@string/tibo_plus3_aux"/>
+
+                <Button
+                    android:id="@+id/opt1_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button"
+                    android:text="OPT1"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:textColor="?attr/colorControlNormal"
+                    android:tag="@string/tibo_plus3_opt1"/>
+
+                <ImageButton
+                    android:id="@+id/bluetooth_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button_blue"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:src="@android:drawable/stat_sys_data_bluetooth"
+                    android:textColor="?attr/colorControlNormal"
+                    android:tag="@string/tibo_plus3_bluetooth"/>
+
+                <ImageButton
+                    android:id="@+id/pair_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button"
+                    android:src="@drawable/bluetooth_searching"
+                    android:text="1"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:tag="@string/tibo_plus3_pair"/>
+
+                <Button
+                    android:id="@+id/opt2_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button"
+                    android:text="OPT2"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:textColor="?attr/colorControlNormal"
+                    android:tag="@string/tibo_plus3_opt2"/>
+
+                <ImageButton
+                    android:id="@+id/skip_back_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:src="@drawable/skip_previous"
+                    android:tag="@string/tibo_plus3_skip_backward"/>
+
+                <ImageButton
+                    android:id="@+id/play_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:src="@drawable/play_pause"
+                    android:tag="@string/tibo_plus3_play"/>
+
+                <ImageButton
+                    android:id="@+id/skip_forward_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button"
+                    android:text="1"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:src="@drawable/skip_next"
+                    android:tag="@string/tibo_plus3_skip_forward"/>
+
+                <ImageButton
+                    android:id="@+id/bass_inc_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button"
+                    android:text="1"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:src="@drawable/add"
+                    android:tag="@string/tibo_plus3_bass_inc"/>
+
+                <ImageButton
+                    android:id="@+id/treble_inc_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button"
+                    android:text="1"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:src="@drawable/add"
+                    android:tag="@string/tibo_plus3_treble_inc"/>
+
+                <Button
+                    android:id="@+id/auto_wake_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button"
+                    android:text="Auto\nwake-up"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:textColor="?attr/colorControlNormal"
+                    android:textAllCaps="false"
+                    android:tag="@string/tibo_plus3_auto_wake"/>
+
+                <ImageButton
+                    android:id="@+id/bass_dec_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button"
+                    android:text="1"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:src="@drawable/remove"
+                    android:tag="@string/tibo_plus3_bass_dec"/>
+
+                <ImageButton
+                    android:id="@+id/treble_dec_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button"
+                    android:text="1"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:src="@drawable/remove"
+                    android:tag="@string/tibo_plus3_treble_dec"/>
+
+                <ImageButton
+                    android:id="@+id/volume_inc_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button"
+                    android:src="@drawable/volume_up"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:tag="@string/tibo_plus3_volume_inc"/>
+
+                <ImageButton
+                    android:id="@+id/bass_reset_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button"
+                    android:text="1"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:src="@drawable/restart_alt"
+                    android:tag="@string/tibo_plus3_bass_reset"/>
+
+                <ImageButton
+                    android:id="@+id/treble_reset_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button"
+                    android:text="1"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:src="@drawable/restart_alt"
+                    android:tag="@string/tibo_plus3_treble_reset"/>
+
+                <ImageButton
+                    android:id="@+id/volume_dec_button"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/circular_button"
+                    android:src="@drawable/volume_down"
+                    android:text="1"
+                    android:gravity="center"
+                    android:layout_margin="5sp"
+                    android:tag="@string/tibo_plus3_volume_dec"/>
+
+            </GridLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/tibo_plus3_label_bottom"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/indicator"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginBottom="1dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">PiRemote</string>
+
+    <!-- Network -->
+    <string name="ip_address">192.168.1.90</string>
+    <string name="port">5000</string>
+
+    <!-- Tibo Plus 3 -->
+    <string name="tibo_plus3">tibo-plus3</string>
+    <string name="tibo_plus3_label_top">PLUS</string>
+    <string name="tibo_plus3_label_bottom">TIB</string>
+    <string name="tibo_plus3_power">POWER</string>
+    <string name="tibo_plus3_mute">MUTE</string>
+    <string name="tibo_plus3_rca">RCA_INPUT</string>
+    <string name="tibo_plus3_aux">AUX_INPUT</string>
+    <string name="tibo_plus3_opt1">OPTICAL_1_INPUT</string>
+    <string name="tibo_plus3_bluetooth">BLUETOOTH_INPUT</string>
+    <string name="tibo_plus3_pair">BLUETOOTH_PAIR</string>
+    <string name="tibo_plus3_opt2">OPTICAL_2_INPUT</string>
+    <string name="tibo_plus3_skip_backward">SKIP_BACKWARDS</string>
+    <string name="tibo_plus3_play">PLAY_PAUSE</string>
+    <string name="tibo_plus3_skip_forward">SKIP_FORWARDS</string>
+    <string name="tibo_plus3_bass_inc">BASS_INC</string>
+    <string name="tibo_plus3_treble_inc">TREBLE_INC</string>
+    <string name="tibo_plus3_auto_wake">AUTO_WAKEUP_TOGGLE</string>
+    <string name="tibo_plus3_bass_dec">BASS_DEC</string>
+    <string name="tibo_plus3_treble_dec">TREBLE_DEC</string>
+    <string name="tibo_plus3_volume_inc">VOLUME_INC</string>
+    <string name="tibo_plus3_bass_reset">BASS_RESET</string>
+    <string name="tibo_plus3_treble_reset">TREBLE_RESET</string>
+    <string name="tibo_plus3_volume_dec">VOLUME_DEC</string>
+</resources>
