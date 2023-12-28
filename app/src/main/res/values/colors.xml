@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="tibo_green">#009441</color>
+    <color name="tibo_grey">#989FA6</color>
+    <color name="tibo_black">#171717</color>
+    <color name="tibo_red">#B51111</color>
+    <color name="tibo_button_grey">#323131</color>
+    <color name="tibo_button_dark_grey">#FF1E1E1E</color>
+    <color name="tibo_button_blue">#0089e8</color>
+    <color name="tibo_button_light_blue">#41b0f1</color>
+</resources>
