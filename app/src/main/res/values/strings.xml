@@ -9,6 +9,8 @@
     <string name="tibo_plus3">tibo-plus3</string>
     <string name="tibo_plus3_label_top">PLUS</string>
     <string name="tibo_plus3_label_bottom">TIB</string>
+
+    <!-- Commands -->
     <string name="tibo_plus3_power">POWER</string>
     <string name="tibo_plus3_mute">MUTE</string>
     <string name="tibo_plus3_rca">RCA_INPUT</string>
